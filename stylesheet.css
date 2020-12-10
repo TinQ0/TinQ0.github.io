@@ -29,7 +29,7 @@ h1 {
 
 /* Animation */
 .anim-typewriter{
-    animation: typewriter 5s steps(23) 0.5s 1 normal both,
+    animation: typewriter 4s steps(23) 0.5s 1 normal both,
         blinkTextCursor 1s infinite;
 }
 @keyframes typewriter{
