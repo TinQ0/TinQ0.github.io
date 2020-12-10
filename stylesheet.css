@@ -1,53 +1,56 @@
-html{
-  min-height: 100%;
-  overflow: hidden;
-}
-    
-body {
+   body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     background-color: #fbf9e8;
     font-family: monospace;
-    height: calc(750px);
-    padding: 0px;
     color: rgba(25,25,25);
 }
-}
+
 
 h1 {
 
 }
 
 .line-1{
-    position: relative;
+    position: absolute;
+    text-align: center;
     top: 42%;  
-    width: 14em;
+    width: 13.85em;
     margin: 0 auto;
     border-right: 2px solid rgba(25,25,25);
     font-size: 500%;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
-/*    transform: translateY(-50%);    */
+    transform: translateY(-100%);    
 }
 
 /* Animation */
 .anim-typewriter{
-  animation: typewriter 3s steps(23) 0.5s 1 normal both,
-             blinkTextCursor 500ms steps(23) infinite normal;
+    animation: typewriter 5s steps(23) 0.5s 1 normal both,
+        blinkTextCursor 1s infinite;
 }
 @keyframes typewriter{
-  from{width: 0;}
-  to{width: 14em;}
+    from{width: 0;}
+    to{width: 13.85em;}
 }
 @keyframes blinkTextCursor{
-  from{border-right-color: rgba(25,25,25);}
-  to{border-right-color: transparent;}
+    steps (1, end);
+    from, to
+    0%   {border-color: black;}
+    49.99%   {border-color: black;}
+    50%  {border-color: transparent;}
+    100% {border-color: transparent;}
 }
 
 
 
-divEnd {
+.end {
     position: absolute;
     text-align: center;
     bottom: 42px;
     width: 100%;
+    font-size: 20px
 }
