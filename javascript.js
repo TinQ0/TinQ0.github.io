@@ -1,13 +1,15 @@
+var document = window.document;
+var i = 0;
+var txt = 'Lorem ipsum dummy text blabla.';
+var speed = 50;
 
-var txt = 'Lorem ipsum typing effect!'; /* The text */
 
-
-function type() {
-    for(var i = 0; i < txt.length; i++){
-        setTimeout(addLetter(txt.charAt(i)), 250)
-        
-    }
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementsByI("demo").innerHTML += txt.charAt(i);
+    i++;
+    document.setTimeout(typeWriter, speed);
+  }
 }
-function addLetter(char) {
-            document.getElementById("demo").innerHTML += char;
-        }
+
+document.onload = typeWriter(); 

@@ -16,26 +16,19 @@ h1 {
 .line-1{
     position: absolute;
     text-align: center;
-    top: 42%;  
-    width: 13.85em;
-    margin: 0 auto;
+    top: 30%;  
+    margin: 3 auto;
     border-right: 2px solid rgba(25,25,25);
     font-size: 500%;
     text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(-100%);    
 }
 
 /* Animation */
 .anim-typewriter{
-    animation: typewriter 4s steps(23) 0.5s 1 normal both,
+    animation:
         blinkTextCursor 1s infinite;
 }
-@keyframes typewriter{
-    from{width: 0;}
-    to{width: 13.85em;}
-}
+
 @keyframes blinkTextCursor{
     steps (1, end);
     from, to
